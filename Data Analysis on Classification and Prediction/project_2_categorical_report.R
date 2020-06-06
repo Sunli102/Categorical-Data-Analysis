@@ -64,10 +64,6 @@ for (i in c(2,3,8,11,14,15))
 
 
 
-
-
-
-
 # plot the histogram of subsamples of categorical variables
 for (i in c(1,4,5,6,7,9,10,12,13,16))
 {
@@ -154,6 +150,7 @@ pred.accuracy.1[best_point.1]
 
 ###################################################
 ## apply classification rule to the test dataset ##
+###################################################
 fit.1 = glm(V16 ~ V9 + V15 + V11 + V6 + V14 + V4 + V8, data = data_train, family = binomial)
 
 ntest = nrow(data_test)
@@ -225,6 +222,7 @@ pi0.opt.1 = pi0[k.1]; pi0.opt.1
 
 ###################################################
 ## apply classification rule to the test dataset ##
+###################################################
 ntest = nrow(data_test)
 test_predict.1 = NULL
 
@@ -237,8 +235,6 @@ test_predict.1[pred.prob >= pi0.opt.1]  = '+'
 test_predict.1[pred.prob < pi0.opt.1]  = '-'
 accuracy.ridge = mean(test_predict.1 == y_test)
 accuracy.ridge         
-
-
 
 
 
@@ -298,6 +294,7 @@ pi0.opt.2 = pi0[k]; pi0.opt.2
 
 ###################################################
 ## apply classification rule to the test dataset ##
+###################################################
 ntest = nrow(data_test)
 test_predict.2 = NULL
 
