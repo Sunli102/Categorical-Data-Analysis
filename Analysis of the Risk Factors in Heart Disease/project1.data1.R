@@ -3,7 +3,7 @@
 ###############
 
 ### Data1
-data1 = read.csv('~/GSU/Categorical Analysis/Project1/project.1.data.1.csv', header = T)
+data1 = read.csv('~/Categorical Analysis/Project1/project.1.data.1.csv', header = T)
 str(data1)
 
 sum(is.na(data1))  # check if there are missing values
