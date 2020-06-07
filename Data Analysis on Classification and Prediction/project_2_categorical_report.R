@@ -1,8 +1,8 @@
 # read in the raw datasets
-data_training = read.table('/Users/lisun/GSU/Categorical Analysis/Project2/project.1.data.2.train.txt',
+data_training = read.table('~/Categorical Analysis/Project2/project.1.data.2.train.txt',
                            sep = ',', na.strings = c('?', 'l'))    
 
-data_testing = read.table('/Users/lisun/GSU/Categorical Analysis/Project2/project.1.data.2.test.txt',
+data_testing = read.table('~/Categorical Analysis/Project2/project.1.data.2.test.txt',
                           sep = ',',na.strings = 'l')  # there is no missing data in the file
 
 # remove the variables with missing values and set up a new training
